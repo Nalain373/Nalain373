@@ -14,146 +14,290 @@
    <string>StudentPortal</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QVBoxLayout" name="verticalLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <widget class="QStackedWidget" name="stackedWidget">
-      <property name="currentIndex">
-       <number>0</number>
-      </property>
-      <widget class="QWidget" name="dashboardPage">
-       <widget class="QWidget" name="">
-        <property name="geometry">
-         <rect>
-          <x>50</x>
-          <y>40</y>
-          <width>77</width>
-          <height>130</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_4">
-         <item>
-          <widget class="QLabel" name="welcomeLabel">
-           <property name="text">
-            <string>TextLabel</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="studentPhotoLabel">
-           <property name="text">
-            <string>TextLabel</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="startQuizButton">
-           <property name="text">
-            <string>PushButton</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="viewResultsButton">
-           <property name="text">
-            <string>PushButton</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="logoutButton">
-           <property name="text">
-            <string>PushButton</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="quizPage">
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <widget class="QLabel" name="questionLabel">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QStackedWidget" name="stackWidget">
+        <widget class="QWidget" name="resultsList"/>
+        <widget class="QWidget" name="welcomePage">
+         <widget class="QLabel" name="welcomeLabel">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>50</y>
+            <width>49</width>
+            <height>16</height>
+           </rect>
+          </property>
           <property name="text">
            <string>TextLabel</string>
           </property>
          </widget>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="radioButton1">
-          <property name="text">
-           <string>RadioButton</string>
+         <widget class="QPushButton" name="showQuizzesButton">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>120</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
           </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="radioButton2">
-          <property name="text">
-           <string>RadioButton</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="radioButton3">
-          <property name="text">
-           <string>RadioButton</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="radioButton4">
-          <property name="text">
-           <string>RadioButton</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="nextButton">
           <property name="text">
            <string>PushButton</string>
           </property>
          </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="submitButton">
+         <widget class="QPushButton" name="resultsButton">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>190</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
           <property name="text">
            <string>PushButton</string>
           </property>
          </widget>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="resultsPage">
-       <widget class="QWidget" name="">
-        <property name="geometry">
-         <rect>
-          <x>200</x>
-          <y>110</y>
-          <width>258</width>
-          <height>246</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <widget class="QLabel" name="resultsLabel">
-           <property name="text">
-            <string>TextLabel</string>
+         <widget class="QPushButton" name="logOutButton">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>250</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>PushButton</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="quizlistpage">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>130</y>
+            <width>231</width>
+            <height>131</height>
+           </rect>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>229</width>
+             <height>129</height>
+            </rect>
            </property>
+           <widget class="QPushButton" name="startQuiz">
+            <property name="geometry">
+             <rect>
+              <x>140</x>
+              <y>20</y>
+              <width>75</width>
+              <height>24</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>PushButton</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="quizName_2">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>10</y>
+              <width>49</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>bbb</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="teacherName">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>30</y>
+              <width>49</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="quizTime">
+            <property name="geometry">
+             <rect>
+              <x>30</x>
+              <y>80</y>
+              <width>49</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>TextLabel</string>
+            </property>
+           </widget>
           </widget>
-         </item>
-         <item>
-          <widget class="QTableWidget" name="resultsTable"/>
-         </item>
-         <item>
-          <widget class="QPushButton" name="backButton">
-           <property name="text">
-            <string>PushButton</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="quizPage">
+         <widget class="QLabel" name="quizName">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>100</y>
+            <width>49</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="question">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>150</y>
+            <width>49</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>TextLabel</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="option1">
+          <property name="geometry">
+           <rect>
+            <x>210</x>
+            <y>210</y>
+            <width>89</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>RadioButton</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="option2">
+          <property name="geometry">
+           <rect>
+            <x>240</x>
+            <y>260</y>
+            <width>89</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>RadioButton</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="option3">
+          <property name="geometry">
+           <rect>
+            <x>260</x>
+            <y>320</y>
+            <width>89</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>RadioButton</string>
+          </property>
+         </widget>
+         <widget class="QRadioButton" name="option4">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>230</y>
+            <width>89</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>RadioButton</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Next">
+          <property name="geometry">
+           <rect>
+            <x>350</x>
+            <y>110</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>PushButton</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="previous">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>170</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>PushButton</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="save">
+          <property name="geometry">
+           <rect>
+            <x>370</x>
+            <y>80</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>PushButton</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="resultsPage">
+         <widget class="QLabel" name="resultsLabel">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>100</y>
+            <width>49</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Results</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="resultsTable">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>170</y>
+            <width>256</width>
+            <height>192</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
        </widget>
-      </widget>
-     </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
